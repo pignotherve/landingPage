@@ -1,0 +1,14 @@
+Comment coder en css :
+
+
+ nom de la balise {
+
+	proprieter : valeur;
+
+}
+
+ Exemple concret:
+ 
+  body{
+ 	color: blue;
+}

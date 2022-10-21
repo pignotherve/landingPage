@@ -1,0 +1,47 @@
+- # Les balises HTML
+
+NOTE : les balises se terminant par /> indique qu'elles sont autofermantes. Exemple : <hr />. 
+Toutes les autres sont ouvrantes/fermantes. Exemple : <header></header>.
+
+## Balises type block les plus courantes :
+<body>, <head>, <html>, <abbr>, <address>, <blockquote>, <h1> à <h6>, <hr />, <p>, <div>, <ol>, <ul>, <li>, <main>, <header>, <footer>, <section>, <article>, <option>, <table>, <caption>, <thead>, <tfoot>, <tbody>, <tr>, <td>, <th>, <abbr>, <form>, <fieldset>, <canvas>, <nav>, <figure>, <figcaption>, <picture>, <aside>, <script>, <style>
+
+## Balises type inline les plus courantes :
+<meta />, <title>, <span>, <img />, <a>, <link />, <cite>, <dfn>, <q>, <br />, <del>, <ins>, <em>, <i>, <strong>, <sub>, <sup>, <button>, <input />,<label>, <legend>, <textarea>, <select>, <video>, <audio>, <small>
+
+## Les balises autofermantes les plus courantes :
+<br />, <hr />, <img />, <input />, <link />, <meta />, <source />
+
+## Les balises (les plus courantes) apportées par le HTML5 :
+<article>, <aside>, <audio>, <canvas>, <figcaption>, <figure>, <footer>, <header>, <nav>, <progress>, <section>, <source>, <video>
+
+## Balises sémantiques :
+<abbr> (abréviation), <address>, <article>, <aside>, <audio>, <blockquote> (citation longue), <body>, <button>, <cite> (indication de l'auteur), <code>, <details>, <em>, <figure>, <footer>, <form>, <h1> à <h6>, <header>, <html>, <i>, <ins>, <main>, <nav>, <p>, <q> (citation courte), <section>, <strong>, <summary>, <table>, <title>, <ul>, <video>
+
+# Balises classées par catégorie :
+## Balises de titre
+<h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+
+## Balises de mise en forme du texte :
+<abbr>, <address>, <b>, <blockquote>, <cite>, <code>, <del>, <em>, <i>, <ins>, <p> (type block), <q>, <span>, <strong> ,<sub>, <sup>, <u>
+
+## Balises de formulaire :
+<button>, <input />, <fieldset> (type block), <form> (type block), <label>, <legend>, <optgroup>, <option>, <select>, <textarea>
+
+## Les balises de tableau :
+<caption>, <table>, <tbody>, <td>, <tfoot>, <th>, <thead>, <tr>
+
+## Les balises de structuration : 
+<article>, <aside>, <body>, <details>, <div>, <footer>, <head>, <header>, <html>, <main>, <nav>, <script>, <section>, <style>, <summary>, <title>
+
+## Balises médias :
+<audio>, <figcaption>, <figure>, <img />, <picture>, <video>
+
+## Balises de liens ou de sources :
+<a>, <link />, <source />
+
+## Balises de listes :
+<dd>, <dl>, <dt>, <li>, <ol>, <ul>
+
+Pour avoir la liste complètes des balises HTML actuelles avec une rapide définition :
+(https://jaetheme.com/balises-html5/)

@@ -1,0 +1,35 @@
+
+ BALISE OBLIGATOIRE EN HTML W3C :
+
+<!doctype html/>  -->document type
+<html lang="fr"/> -->important pour determiner au moteur de recherche la langue utiliser
+
+<head> -->son contenue non visible!
+
+	<meta carset ="utf-8"/> -->definit l'encodage pour le navigateur la en français
+	<meta name="description" content ="un texte de 150 caractére max"/>
+
+	<title>Titre de ma page </title>  --> ce que contient votre page titre de votre onglet
+
+	<link rel="stylesheet" href="css/style.css /> -->RATACHEMENT DU FICHIERS CSS
+</head>
+<body> --> PARTIE VISIBLE debut
+
+	<header> --> EN TETE DE NOTRE SITE
+		<nav> -->BARRE DE NAVIGATION
+			<a href="index.html">Aceuil< /a> -->LIENS
+			<a href="#">< /a>
+			<a href="#">< /a>
+			<a href="contact.html">Contact< /a>
+		</nav>
+	</header>
+
+	<main> -->corps de page
+		
+	</main>
+	<footer> -->Pied de page 
+		
+	</footer>
+</body>  -->Fin d'Affichage
+</html>  -->Fin html
+	

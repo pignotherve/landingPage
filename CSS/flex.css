@@ -1,0 +1,221 @@
+* {/*proprieter taille de boite trés utile notament pour le responssive*/
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../img/fond.png);
+
+    width: 100%;
+}
+/* En tete */
+header{
+    background-color: rgb(87, 214, 176);
+    text-align: center;
+}
+header h1{
+    color:rgb(48, 104, 85);
+    font-size: 45px;
+    /*Telecharger font est copier coller link*/
+    font-family: "Anton", sans-serif;
+    letter-spacing: 1px;
+    /* Pour enlever la marge du titre*/
+    margin:0 auto;
+    text-align: center; 
+}
+header img{
+    width: 10%;
+}
+
+nav{
+    background-color: rgb(48, 104, 85);
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    border: 2px solid rgb(172, 251, 148);
+    background: rgb(87, 214, 176);
+    color: rgb(48, 104, 85);
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Corp de page  */
+main{
+    background-color: rgb(87, 214, 176);
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-top: 1%;
+    text-align: center;
+    width: 75%;
+
+}
+h2{
+    color: rgb(34, 105, 31);
+    padding: 20px;
+    font-size:35px;
+    text-shadow: 1px 1px 2px #aaa;
+  /* 4 valeurs : ombre horizontale, verticale, zone de flou, couleur de l'ombre */
+}
+
+div.flex{
+    width: 47%;
+}
+ul{
+    padding: 0px;
+    list-style-type: none;
+    border: 2px dashed black;
+}
+
+li{
+    padding: 2em; 
+}
+li.a{
+    background-color: red;
+}
+
+li.b{
+    background-color: blue;
+}
+
+li.c{
+    background-color: green;
+}
+li.d{
+    background-color: purple;
+}
+
+li.e{
+    background-color: yellow;
+}
+
+li.f{/*ici on cible la balise <li> qui a la class .f*/
+    background-color: grey;
+}
+
+.test1{
+    display:flex; 
+    /*le flex de base es en ligne(row)*/
+    /* flex-direction: row; */
+}
+
+.test2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+
+.test3{
+    display: flex;
+    flex-direction: column;
+}
+
+.test4{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.test5{
+    display: flex;
+    width: 240px;
+    flex-wrap: nowrap;
+}
+
+.test6{
+    display: flex;
+    width: 240px;
+    flex-wrap: wrap;
+}
+
+.test7{
+    display: flex;
+    align-items: center;
+}
+
+.test7 .b{/*je selectionne ma liste7 par le biais de sa classe plus precisement je vais selectionner dans cette liste le <li> qui a la classe b*/
+    line-height: 4em;/*hauteur de mon <li>*/
+}
+
+.test7 .d{
+    line-height: 4em;
+}
+
+.test8{
+    display: flex;
+    align-items: flex-start;
+}
+
+.test8 .b{
+    line-height: 4em;
+}
+
+.test8 .e{
+    line-height: 4em;
+}
+
+.test9{
+    display: flex;
+    align-items: flex-end;
+}
+
+.test9 .b{
+    line-height: 4em;
+}
+
+.test9 .e{
+    line-height: 4em;
+}
+
+.test10{
+    display: flex;
+    justify-content: center;
+}
+
+.test11{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.test12{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.test13{
+    display: flex;
+    justify-content:space-between;
+}
+
+.test14{
+    display: flex;
+    justify-content:space-around;
+}
+div.flex a {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    border: 2px solid rgb(172, 251, 148);
+  background: rgb(48, 104, 85);
+  color: rgb(87, 214, 176);
+  /* margin: 10px; */
+  padding: 2px 10px;
+  border-radius: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  width: 25%;
+}
+
+/* La zone de pied de page */
+footer{
+    background-color:rgb(48, 104, 85);
+    color:antiquewhite;
+    text-align: center;
+}

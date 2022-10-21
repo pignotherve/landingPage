@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Partie non visible du site -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="site HTML - CSS" />
+    <title>Formulaire</title>
+    <!-- Choisissez une police Google Fonts et ajoutez-là ici : -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!--fichiers normalise remet a zero les normes css-->
+    <link rel="stylesheet" href="CSS/normalise.css" />
+    <link rel="stylesheet" href="CSS/formulaire.css">
+</head>
+
+<body>
+    <!--Partie visible du site-->
+    <header>
+        <!--En tête du site-->
+        <h1>Site de cours HTML CSS </h1>
+        <img src="img/logo.png" alt="logo html5 et css3" />
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="flex.html">Flex</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+            <a href="responsive.html">Responsive</a>
+            <a href="bootstrap.html">Bootstrap</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Les Formulaires</h2>
+            <p>
+                Un formulaire Html permet d'envoyer des données au serveur .Chaque formulaire est indépendant et posséde
+                l'url du fichier destination des données dans l'attribut 'action'.
+            </p>
+            <p>
+                Il existe la methode GET les données sont visible dans l' url .
+            </p>
+            <p>
+                Il existe la methode POST les données sont encapsuler dans l'entête HTTP.
+            </p>
+            <p>
+                L'envoie des donnees via un formulaire peut etre securise en utilisant le protocole HTTPS,à configurer
+                sur le serveur lors de la mise en ligne du site.
+            </p>
+            <p>
+                Les 3 differents attributs pour les formulaires:
+            </p>
+            <ul class="none">
+                <li>Attribut Action : url de destination</li>
+                <li>Attribut Method : manières de circulation des données</li>
+                <li>Attribut Enctype : permet d'envoyer un fichier correctement (type d'encodage)</li>
+            </ul>
+
+            <p>Les differents types pour nos input :</p>
+            <ul class="none">
+                <li>Le type text (champs de texte simple)</li>
+                <li>Le type password(champs dont la valeur esqt un mot de passe elle est cachée,remplacer par des points
+                    pour eviter d'etre lu.)</li>
+                <li>Le type radio (choix parmi plusieurs 'OU')</li>
+                <li>Le type chekbox (choix parmi plusieurs 'ET')</li>
+                <li>Le type file (champ permettant de sélectionner un ou plusieurs fichiers sur son ordinateur)</li>
+                <li>Le type hidden (champ caché,trés utile pour transmettre au serveur des informations liées a la
+                    securité ou à la session en cours)</li>
+                <li>Le type date (champ permettant de choisir une date)</li>
+                <li>Le type email(champ permettant uniquement la saisie d'une adresse mail)</li>
+                <li>Le type url (champ permettant uniquement la saisie d'une URL)</li>
+                <li>Le type tel (champ dédié à la saisie d'un numero de téléphone)</li>
+
+            </ul>
+        </section>
+        <section class="formulaire">
+            <h2>Formulaire exemple</h2>
+            <!-- Attribut Method : manières de circulation des données-->
+            <!--Attribut Action : url de destination-->
+            <!--Attribut Enctype : permet d'envoyer un fichier correctement (type d'encodage)-->
+            <form method="post" action="url de destination" enctype="multipart/form-data">
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" id="pseudo" name="pseudo" required placeholder="Tapez votre pseudo"><br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Tapez votre prénom"><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"><br>
+
+                <label for="password">Mot de passe</label>
+                <input type="password" id="mdp" name="mdp"><br>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" cols="25"></textarea><br>
+
+                <label for="cv">CV</label>
+                <input type="file" id="cv" name="cv"><br>
+
+                <label for="fruit">Quel sont vos fruits préférés ?</label>
+                <label for="orange">Orange</label>
+                <input type="checkbox" id="orange" value="orange">
+                <label for="fraise">Fraise</label>
+                <input type="checkbox" id="fraise" value="fraise" checked>
+                <label for="poire">Poire</label>
+                <input type="checkbox" id="poire" value="poire"><br>
+
+                <input type="submit" name="envoyer" value="Envoyer">
+                <input type="reset" name="annuler" value="Annuler">
+            </form>
+        </section>
+        <section>
+            <h2>Exemple de code input et label</h2>
+
+            <img src="img/input.png" alt="balise input et label">
+            <p>La balise label est utiliser avec la balise input , elles sont liees par l id donner au l input. Cette ID
+                est utiliser dans l attribut for de la balise label.</p>
+        </section>
+        <div>
+            <p>Lien vers un guide Formulaire</p>
+            <a href="https://developer.mozilla.org/fr/docs/Learn/Forms/Your_first_form" class="btn">Formulaire
+                Mozilla</a>
+        </div>
+    </main>
+    <footer>
+        <h3>Zone de pied de page.</h3>
+        <img src="img/logo.png" alt="logo html5 et css3" />
+        <p>Possibilite de contact,adresse,maps,mentions légales ect...</p>
+
+    </footer>
+</body>
+
+</html>

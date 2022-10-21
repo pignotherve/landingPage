@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Partie non visible du site -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="site HTML - CSS" />
+    <title>Acceuil</title>
+    <!-- Choisissez une police Google Fonts et ajoutez-là ici : -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!--fichiers normalise remet a zero les normes css-->
+    <link rel="stylesheet" href="CSS/normalise.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+</head>
+
+<body>
+    <!--Partie visible du site-->
+    <div class="container">
+        <header>
+            <!--En tête du site-->
+            <h1>Site de cours HTML CSS </h1>
+            <img src="img/logo.png" alt="logo html5 et css3" />
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="selecteur.html">Selecteurs</a>
+                <a href="image.html">Image</a>
+                <a href="position.html">Position</a>
+                <a href="flex.html">Flex</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html">Animation</a>
+                <a href="responsive.html">Responsive</a>
+                <a href="bootstrap.html">Bootstrap</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Signification : HTML</h2>
+                <p>
+                    Hypertext Markup Language
+                    c'est un langage de balise qui définit la structure de votre HTML est qui permet d'afficher des
+                    informations , pour cela on y déclare des élèments dans des balises appeler tags en anglais, des
+                    zones et tout ce qui devra être présent sur la page.Html n'est pas un langague de programmation il
+                    est interpreter par le navigateur.
+                </p>
+                <p>
+                    Les commentaires en HTML il suffit de mettre le signe balise ouvrante suivi d'un point d'exclamation
+                    2 tiret du 6, le contenue de notre commentaires, puis a nouveu 2tiret du 6 est le signe de la balise
+                    fermente.
+
+                </p>
+                <p>
+                    Exemple concret dans votre code HTML personnel
+                </p>
+                <img class="com" src="img/commentaire-html.png" alt="commentaire en HTML">
+                <p>
+                    <em>Rappel important les commentaires pour des site publier, sont a limiter est il sont tout de même
+                        visible, donc jamais d'information confidentiel en commentaire!</em>
+                </p>
+                <section>
+                    <h3>Qu'est qu 'une Balise ?</h3>
+                    <p>
+                        Les balises HTML sont les éléments de base du codage HTML. Elles sont utilisées pour mettre en
+                        forme un texte, structurer et hiérarchiser le contenu d'une page. Les balises indiquent
+                        également au navigateur comment afficher la page en question.
+                    </p>
+                    <p>
+                        On va voir un certain de nombre de balise durant ce cour les plus utiliser bien sur il en existe
+                        plein d'autre voici un exemple ci-dessous
+                    </p>
+                    <p>
+                        Ils existent deux types de balise.
+
+                    </p>
+                    <p>
+                        Le premier type: les balise ouvrante /fermante ou appeler aussi balise de couple qui contient
+                        l'élèment.Exemple:une section.
+                    </p>
+                    <p>
+                        Le second type: les balise auto fermante ou appeler orpheline comme la balise img tout est dans
+                        la balise.
+                    </p>
+                    <p>L'indentation</p>
+                </section>
+                <section>
+                    <h3>Balise de type </h3>
+                    <p>Le type block :</p>
+                    <p>Les balise de type block prennent toute la largeur est font un retour a la ligne comme la balise
+                        "img" ou encore la balise "div"</p>
+                    <p>Le type inline :</p>
+                    <p>Les balise inline elles ne font pas de retour à la ligne comme la balise "a" ou encore la balise
+                        "span"</p>
+                </section>
+                <section>
+                    <h3>Structure de contenue de site en HTML5</h3>
+                    <img src="img/structureSite.png" alt='image de struture de base html'>
+                </section>
+
+                <section>
+                    <h2>Signification : CSS</h2>
+                    <p>
+                        Cascading Style Sheets: feuille de style en cascade autrement dit un langage de mise en forme,
+                        de design, il permet de styliser les informations, on va passer par du positionnement, des
+                        couleurs, des polices d'écriture est bien d'autres.
+                    </p>
+                    <img class="com" src="img/commentaire_css.png" alt="commentaire en CSS">
+                    <p>
+                        On as différents moyen de sélèctionner l'élèment html que l on veux modifier ou déplacer.En Css
+                        nous appelerons cela un sélecteur, on peut utiliser le nom de la balise html.
+
+                    </p>
+                    <p>
+                        Une des propriétées trés utile pour placer nos élèments est la proprietée "display" elle aura
+                        comme valeur en géneral "Block" ou "Inline".Elle va gérer le fait que la balise prennent ou non
+                        toute la largeur de la page web.Les élèments se placent les un en dessous des autres si ils sont
+                        "block" sinon ils seront les un a coter des autres "inline"
+                    </p>
+                    <h2>Propriter de dimenssion</h2>
+                    <p>
+                        Il existe 4 proprieter importante la largeur ,la hauteur ,la marge interieur et la marge
+                        exterieur
+                    </p>
+                    <p>
+                        Pour La largeur on utilisera la proprietée widht qui prend en valeur des px ,des vw,des em(voir
+                        rem) ou des %.
+                    </p>
+                    <p>
+                        Pour la hauteur on utilisera la proprietée height qui prend en valeur des px ,des vh,des em(voir
+                        rem) ou des %.
+                    </p>
+                    <p>
+                        Pour la marge interieur on utilisera la proprietée padding qui prend en valeur des px ,des
+                        em(voir rem) ou des %.
+                    </p>
+                    <p>
+                        Pour la marge exterieur on utilisera la proprietée margin qui prend en valeur des px ,des
+                        em(voir rem) ou des %.
+                    </p>
+                    <p>
+                        L'avantage avec les pourcentage c'est que la taille d'ecran s'adapte,l'inconvenient moins precis
+                        qu'un pixel.
+                    </p>
+
+                </section>
+
+                <section>
+                    <h3>L' indentation</h3>
+                    <p>L' indentation permet d'avoir un code plus clair plus lisible,il est donc fortement recomander d'
+                        indenter votre code.</p>
+                </section>
+                <section class="section">
+                    <h3>La W3C</h3>
+                    <p>
+                        Le W3C ou World Wide Web Consortium désigne un organisme international à but non lucratif. Son
+                        rôle est de définir les standards techniques liés au web.
+                    </p>
+                    <p>
+                        Le W3C met à disposition un espace de validation pour vérifier que l'on a bien respecter les
+                        régles,un code valide est un code propre.Ci dessous je vous ai mis les liens cliquer vous serez
+                        dessus!
+                    </p>
+                    <a href="https://validator.w3.org">Redirige vers page validateur W3C HTML5</a>
+                    <a href="https://jigsaw.w3.org">Redirige vers page validateur W3C CSS</a>
+                </section>
+        </main>
+    </div>
+    <footer>
+        <h3>Zone de pied de page.</h3>
+        <img src="img/logo.png" alt="logo html5 et css3" />
+        <p>Possibilite de contact,adresse,maps,mentions légales ect...</p>
+
+    </footer>
+</body>
+
+</html>

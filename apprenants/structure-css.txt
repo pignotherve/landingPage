@@ -1,0 +1,30 @@
+
+/**********************************EXEMPLE HTML*************************************************/
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mes expériences CSS</title>
+	<!--COMMENTAIRE HTML ne pas oublie de ratacher notre fichier css a notre html garce au link si desous -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <p>Créez votre test ici !</p>
+
+  </body>
+</html>
+
+
+/************************STRUCTURE DE BASE CSS***********************************************/
+POUR APPELER UN ELEMENT EN CSS SOIT ON LE RECUPER PAR SA BALISE COMME AVEC L EXEMPLE DE NOTRE PARAGRAPHE
+
+sélecteur {
+    proprieté : valeur;
+}
+
+CE QUI DONNE :
+
+p {
+  color: red;
+}

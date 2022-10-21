@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site HTML - CSS">
+    <title>Responsive</title>
+    <!-- Choisissez une police Google Fonts et ajoutez-là ici : -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!--fichiers normalise remet a zero les normes css-->
+    <link rel="stylesheet" href="CSS/normalise.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!--En tête du site-->
+            <h1>Site de cours HTML CSS </h1>
+            <img src="img/logo.png" alt="logo html5 et css3" />
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="selecteur.html">Selecteurs</a>
+                <a href="image.html">Image</a>
+                <a href="position.html">Position</a>
+                <a href="flex.html">Flex</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html">Animation</a>
+                <a href="responsive.html">Responsive</a>
+                <a href="bootstrap.html">Bootstrap</a>
+            </nav>
+        </header>
+        <main>
+
+            <section>
+                <h2>Le Responsive Web design</h2>
+                <p>
+                    Le Responsive Web Desing est un ensemble de pratique permettant de visualiser de façon optimum une
+                    page web sur différent appareils ayant des tailles d'écran trés variées.Permet de pouvoir mettre
+                    notre site aussi bien sur téléphone mobile que sur tablette ou encore un écran de télèvision.Les
+                    appareils mobiles comme les télèphone mobile ou les tablettes possédent en outre une surface
+                    virtuelle nommée surface de rendu de l'appareil (device-widht).
+                </p>
+
+                <p>
+                    Le viewport du navigateur: correspond à la surface de la fenêtre du navigateur.Cependant,sur mobile,
+                    la notion de fenêtre est différentes de celle d'un écran de bureau,il n'y a pas de cadre ni de barre
+                    prévu pour naviguer de maniére tactille.Toujours en fonction des navigateurs.
+                </p>
+                <p>
+                    La balise meta viewport permet d'avoir un espace moins large correspondant plus à la taille physique
+                    de l'appareil, pour ce faire on déclare la correspondance dans une balise meta dédiée au viewport.
+                    Voir enssemble les différentes des propiétés disponible pour la balise meta name viewport content
+                    width(largeur).
+                </p>
+                <div class="flex">
+                    <div>
+                        <h3>Zoning ordinateur</h3>
+                        <p>Ici on a un zoning realiser pour un ecran d'ordinateur a sa droite vous pourrez voir le meme
+                            rendu mais version mobile</p>
+                        <img src="img/responsive-01.PNG" alt="zoning sur ordinateur">
+                    </div>
+                    <div>
+                        <h3>Zoning mobile(responsive)</h3>
+                        <p>Ici on a un zoning realiser pour un ecran mobile a sa gauche vous pourrez voir le meme rendu
+                            mais version ordinateur</p>
+                        <img src="img/responsive-01-mobile670px.PNG" alt="zoning sur mobile">
+                    </div>
+
+                </div>
+            </section>
+            <section>
+                <h2>Les Média Queries: </h2>
+                <p>
+                    Maintenant que l'espace disponible dans le viewport du navigateur est celui du device-widht, il est
+                    nécessaire de faire en sorte que la page s'affiche correctement quelle que soit cette taille.
+                    On va utiliser pour cela les Média Queries. Il s'agit d'écrire des déclarations CSS en fonction de
+                    certains critères.La syntaxe est proche d'un test conditionelle de programmation.
+                </p>
+                <p class="gros">
+                    Exemple pour cibler uniquement les appareils dont la largeur du viewport est inférieur à 480px :
+
+                </p>
+                <img class="petit" src='img/media_queries.png' alt='capture ecran de media queries' />
+                <p>Sur cette page un responsive a été fait ,lorsque la taille d'ecran se reduit a moins de 768px alors
+                    l'affichage change</p>
+            </section>
+            <div>
+                <h4>Lien vers un guide responsive</h4>
+                <a href="https://developer.mozilla.org/fr/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                    class='btn'>Responsive Mozilla</a>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <h3>Zone de pied de page.</h3>
+        <img src="img/logo.png" alt="logo html5 et css3" />
+        <p>Possibilite de contact,adresse,maps,mentions légales ect...</p>
+
+    </footer>
+</body>
+
+</html>

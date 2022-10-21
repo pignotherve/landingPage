@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site HTML - CSS">
+    <title>Tableau</title>
+    <link rel="stylesheet" href="CSS/normalise.css">
+    <link rel="stylesheet" href="css/tableau.css">
+</head>
+
+<body>
+    <header>
+        <!--En tête du site-->
+        <h1>Site de cours HTML CSS </h1>
+        <img src="img/logo.png" alt="logo html5 et css3" />
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="selecteur.html">Selecteurs</a>
+            <a href="image.html">Image</a>
+            <a href="position.html">Position</a>
+            <a href="flex.html">Flex</a>
+            <a href="zoning.html">Zoning</a>
+            <a href="tableau.html">Tableau</a>
+            <a href="liste.html">Liste</a>
+            <a href="formulaire.html">Formulaire</a>
+            <a href="multimedia.html">Multimedia</a>
+            <a href="animation.html">Animation</a>
+            <a href="responsive.html">Responsive</a>
+            <a href="bootstrap.html">Bootstrap</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>LES TABLEAUX</h2>
+            <p>
+                La création d'un tableu simple nécessite au minimum l'utilisation des balise table (le tableau),tr(pour
+                chaque ligne->table row en anglais) et td(pour chaque case->table data en anglais ) .
+            </p>
+            <p>
+                On peut utiliser la balise th (table head) au lieu de td pour les entêtes de colonne.
+            </p>
+            <ul class="liste">
+                <li>
+                    Résumer des balise utilisées pour les tableux complet:
+                </li>
+                <li>
+                    La balise table(Déclaration principale de la table)
+                </li>
+                <li>
+                    La balise caption(Déclaration du titre du tablaeu)
+                </li>
+                <li>
+                    La balise thead (Déclaration d'une section d'en têtede tableau)
+                </li>
+                <li>
+                    la balise tbody (Déclaration du corps du tableau)
+                </li>
+                <li>
+                    la balise tfoot (Déclaration du peid du tableau)
+                </li>
+                <li>
+                    la balise tr (Déclaration d'une ligne "table row")
+                </li>
+                <li>
+                    la balise td (Déclaration d'une cellule "table data")attributs utiles pour fusionner les cellules
+                    l'attribut colspan pour acce vertical et l 'attribut rowspan pour acce horizontale.
+                </li>
+                <li>
+                    la balise th (Déclaration d'une cellule d'en tête )attributs utiles pour fusionner les cellules
+                    l'attribut colspan pour acce vertical et l 'attribut rowspan pour acce horizontale.
+                </li>
+            </ul>
+            <section>
+                <h2>Tableau simple :</h2>
+                <table id="simple">
+                    <!-- table -> annonce la création de tableau-->
+                    <tr>
+                    <tr>
+                        <!-- tr-> ligne de tableau -->
+                        <th colspan="3">Tableau</th>
+                        <!-- th -> entête du tableau ,attribut colspan =3 permet de fusionner dans l'acce horizontalement -->
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>Ligne 2,colonne1</td><!-- td->cellulle simple -->
+                        <td>Ligne 2,colonne2</td>
+                        <td>Ligne 2,colonne3</td>
+                    </tr>
+                    <tr>
+                        <td>Ligne 3,colonne1</td>
+                        <td>Ligne 3,colonne2</td>
+                        <td>Ligne 3,colonne3</td>
+                    </tr>
+                </table>
+                <!--fin du tableau-->
+                <img src="img/tableau_simple.png" alt="tableau simple html" id="tabSimple">
+            </section>
+            <h2>Exemple de Tableau complet :</h2>
+            <section class="tableau">
+                <table>
+                    <caption>
+                        <i class="fa fa-plane" aria-hidden="true">
+                        </i>Vols Paris Rome
+                    </caption>
+                    <thead>
+                        <!--head de tabeau-->
+                        <tr>
+                            <th>Dates</th>
+                            <td>02/08/2017</td>
+                            <!-- cellule de ligne-->
+                            <td>03/08/2017</td>
+                            <td>05/08/2017</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--corps de tabeau-->
+                        <tr>
+                            <!--th 2 cellule vide-->
+                            <th rowspan="2">Air France</th>
+                            <td>Départ 10h - Arrivé 13h</td>
+                            <td>Départ 15h - Arrivé 18h</td>
+                            <td>Départ 17h - Arrivé 20h</td>
+                        </tr>
+                        <tr>
+                            <td>200€</td>
+                            <td>180€</td>
+                            <td>170€</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Alitalia</th>
+                            <td>Départ 6h - Arrivé 9h</td>
+                            <td>Départ 13h - Arrivé 16h</td>
+                            <td>Départ 21h - Arrivé 00h</td>
+                        </tr>
+                        <tr>
+                            <td>120€</td>
+                            <td>250€</td>
+                            <td>100€</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <!--footer de tabeau-->
+                        <tr>
+                            <th>Dates</th>
+                            <td>02/08/2017</td>
+                            <td>03/08/2017</td>
+                            <td>05/08/2017</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <div>
+                <p>Lien vers un guide tableau</p>
+                <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/table" class="btn">Tableau Mozilla</a>
+            </div>
+    </main>
+    <footer>
+        <h3>Zone de pied de page.</h3>
+        <img src="img/logo.png" alt="logo html5 et css3" />
+        <p>Possibilite de contact,adresse,maps,mentions légales ect...</p>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,171 @@
+* {/*proprieter taille de boite trés utile notament pour le responssive*/
+  box-sizing: border-box;
+}
+
+
+body{
+  background-image: url(../img/fond.png);
+  /* Proprieter background*/
+  /*
+   background-repeat:no-repeat;
+   background-size: cover; 
+   */
+  
+  width: 100%;
+}
+/* En tete */
+header{
+  background-color: rgb(87, 214, 176);
+  text-align: center;
+}
+header h1{
+  color:rgb(48, 104, 85);
+  font-size: 45px;
+  /*Telecharger font est copier coller link*/
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  /* Pour enlever la marge du titre*/
+  margin:0 auto;
+  text-align: center; 
+}
+header img{
+  width: 10%;
+}
+
+nav{
+  background-color: rgb(48, 104, 85);
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  border: 2px solid rgb(172, 251, 148);
+  background: rgb(87, 214, 176);
+  color: rgb(48, 104, 85);
+  margin: 10px;
+  padding: 2px 10px;
+  border-radius: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Corp de page  */
+body{
+  background-image: url(../img/fond.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+/* En tete */
+header{
+  background-color: rgb(87, 214, 176);
+  text-align: center;
+}
+header img{
+  width: 10%;
+}
+
+header nav{
+  background-color: rgb(48, 104, 85);
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  border: 2px solid rgb(172, 251, 148);
+  background: rgb(87, 214, 176);
+  color: rgb(48, 104, 85);
+  margin: 10px;
+  padding: 2px 10px;
+  border-radius: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Corp de page  */
+main{
+  background-color: rgb(87, 214, 176);
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+/***************************LISTE************************/
+
+ul.fruit {
+display:flex;
+flex-direction:column;
+justify-content:space-between ;
+
+list-style: none;/*sert a enlever les puces*/
+}
+
+ol.ordo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+ol.ordo li{
+  width: 5%;
+}
+/*il est possible d'appliquer les mêmes régles à plusieurs sélecteurs simultanément, en les séparant d'une virgule*/
+.imbriquee, .imbriquee ul {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin: 0 auto;
+}
+.imbriquee,
+.imbriquee ul li{
+  width: 2%;
+}
+.taille{
+  width:20%;
+}
+.imbriquee {
+  cursor: pointer;
+}
+
+.imbriquee ol {
+  display: none;
+}
+.europe:hover ol,
+.asie:hover ol { 
+  display: block;
+}
+
+/* Effet de zoom et de background sur les <li> */
+.imbriquee li ol li:hover {
+  font-size: 200%;
+  background: rgb(48, 104, 85);
+  display: inline;
+  box-shadow: 5px 10px 10px rgb(87, 214, 176);
+  transition-duration: 1s;
+}
+.btn{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 2px solid rgb(172, 251, 148);
+background: rgb(48, 104, 85);
+color: rgb(87, 214, 176);
+/* margin: 10px; */
+padding: 2px 10px;
+border-radius: 10px 0px;
+text-decoration: none;
+font-size: 20px;
+width: 15%;
+}
+/**************************FIN LISTE************************/
+footer{
+  background-color: rgb(48, 104, 85);
+  text-align: center;
+}
+/* La zone de pied de page */
+
+footer{
+  background-color:rgb(48, 104, 85);
+  color:antiquewhite;
+  text-align: center;
+}

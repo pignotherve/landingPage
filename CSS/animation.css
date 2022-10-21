@@ -1,0 +1,228 @@
+* {/*proprieter taille de boite trés utile notament pour le responssive*/
+  box-sizing: border-box;
+}
+body{
+  background-image: url(../img/fond.png);
+  width: 100%;
+}
+/* En tete */
+header{
+  background-color: rgb(87, 214, 176);
+  text-align: center;
+}
+header h1{
+  color:rgb(48, 104, 85);
+  font-size: 45px;
+  /*Telecharger font est copier coller link*/
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  /* Pour enlever la marge du titre*/
+  margin:0 auto;
+  text-align: center; 
+}
+header img{
+  width: 10%;
+}
+
+nav{
+  background-color: rgb(48, 104, 85);
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a {
+  border: 2px solid rgb(172, 251, 148);
+  background: rgb(87, 214, 176);
+  color: rgb(48, 104, 85);
+  margin: 10px;
+  padding: 2px 10px;
+  border-radius: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Corp de page  */
+main{
+  background-color: rgb(87, 214, 176);
+  margin: 0 auto;
+  text-align: center;
+  width: 75%;
+}
+section{
+  width: 50%;
+  margin: 0 auto;
+}
+div {
+  margin:10em auto 0;
+  width:20em;
+  background-color:#fc3;
+  
+}
+/*ANIMATION*/
+
+.boite{
+  transform: rotate(45deg) scale(1);
+  
+}
+
+.boite2{
+  transform: translate(5em,5em);
+}
+
+.boite3{
+  transform:skewx(30deg);
+}
+/*scale es le grossissement de la boite *//*il peut etre utiliser egalement afin de modifier la forme de la boite ecrit ainsi 
+scale (2(horizontal),0.5(vertical) il sera ecrit ainsi */
+/*rotate permet de faire tourner la boite */
+/*translate sert a decaler la boite (5em(horizontal),10em(vertical))*/
+/*skewx permet d incliner la boite */
+/*--------------------------transition--------------------------------------------------*/
+.boite4{
+  transition:all 1s;
+  transform: translate(50em,5em);
+}
+.boite4:hover{
+  transform:rotate(45deg);
+}
+
+
+
+/*la transition permet de mettre un timing a certain evenement plusieur parametre
+transition:all(qui) 1s(le temps) linear(fonction) 1s(delai)*/
+.boite5{
+  transition:background 15s,transform 10s;
+}
+.boite5:hover{
+  transform:rotate(45deg);
+  background-color:red;
+}
+
+/*on peut utilise les terme ease-in ou ease-out afin d accelerer ou de ralentir les effet de rotation*/
+
+.boite6{
+  transition:all 1s ease-out 1s;
+}
+.boite6:hover{
+  transform:rotate(45deg);
+  background-color:red;
+}
+
+/*--------------------------------animation-----------------------------------------*/
+/*le @keyframes doit etre nommer  pas dimportance sur le nom */
+.boite7{
+  animation:slideLeft 30s;
+}
+@keyframes slideLeft{/**/
+  from{
+      transform: translate(50%);
+      background: blue;
+  }
+  to{
+      transform: translate(0);
+  }
+}
+
+.boite8{
+   animation:slideRight 30s;
+}
+@keyframes slideRight{
+  from{
+      transform: translate(50%);
+      background: blue;
+  }
+  30% {
+      transform: translate(-50%);
+      background: red;
+      color:white;
+  }
+  80% {
+      transform: translate(200%);
+      background: green;
+      color:red;
+  }
+  to{
+      transform: translate(0);
+  }
+}
+
+
+/* pour l animation tu peut rajouter sur la ligne "infinite" et/ou "alternate"*/
+
+.boite9{
+   animation:slideNight 30s infinite;
+}
+@keyframes slideNight{
+  from{
+      transform: translate(50%);
+      background: blue;
+  }
+  30% {
+      transform: translate(-50%);
+      background: red;
+      color:white;
+  }
+  80% {
+      transform: translate(200%);
+      background: green;
+      color:red;
+  }
+  to{
+      transform: translate(0);
+  }
+}
+
+
+/*
+* Images en gris (grayscale) et flouté (blur)
+*/
+.imgEffets{
+  display: flex;
+  flex-wrap: wrap;
+}
+.imgEffets li{
+  list-style: none; 
+  width: 48%;
+  height: 150px;
+  margin: 5px;
+}
+.imgEffets img{
+  z-index: 1;
+  height: 150px;  
+  box-shadow: 0 0 3px black;
+  transition: .5s cubic-bezier(0, 3, .4, 1);
+  /* cubic-bezier commence par 0 et se termine par 1 puis entre nous mettrons nos valeurs*/
+  /*http://cubic-bezier.com*/
+}
+.imgEffets li:hover img{
+  z-index: 2;
+  transform: scale(1.5);
+  box-shadow: 0 0 10px black;
+  }
+  .imgEffets:hover li:not(:hover) img {
+    filter: grayscale(1) blur(5px);
+  }
+  .btn{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border: 2px solid rgb(172, 251, 148);
+  background: rgb(48, 104, 85);
+  color: rgb(87, 214, 176);
+  padding: 2px 10px;
+  border-radius: 10px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  width:40% ;
+  }
+  .origine{
+    background-color: rgb(87, 214, 176);
+  }
+/* La zone de pied de page */
+
+footer{
+  background-color:rgb(48, 104, 85);
+  color:antiquewhite;
+  text-align: center;
+}
+

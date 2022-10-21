@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="site HTML - CSS">
+    <title>Selecteur</title>
+    <link rel="stylesheet" href="CSS/normalise.css">
+    <link rel="stylesheet" href="CSS/selecteur.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <!--En tête du site-->
+            <h1>Site de cours HTML CSS </h1>
+            <img src="img/logo.png" alt="logo html5 et css3" />
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="selecteur.html">Selecteurs</a>
+                <a href="image.html">Image</a>
+                <a href="position.html">Position</a>
+                <a href="flex.html">Flex</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html">Animation</a>
+                <a href="responsive.html">Responsive</a>
+                <a href="bootstrap.html">Bootstrap</a>
+            </nav>
+        </header>
+        <main>
+            <h2>LES SELECTEURS</h2>
+            <section>
+                <h3>Mettre du style avec le CSS</h3>
+                <p>
+                    Pour commencer il nous faudra creer un dossier, nommer css pour plus de clareté mais rien ne vous y
+                    oblige, qui contiendras tout vos fichiers avec extenssion.css
+                </p>
+                <p>
+                    Creér également un fichier que je nomme style.css pour exemple mais pas d'obligation de nommage ici
+                    hormis l'extenssion .css qui precise le type de fichier.
+                </p>
+                <p>
+                    Maintenant nous devons donner accés a notre page, à notre navigateur, pour ce faire il faut ajouter
+                    la balise autofermantes link dans votre balise head.(Exemple concret dans le head de cette page vous
+                    retrouverez le link )
+                </p>
+                <img class="petit" src="img/selecteurs_css.png" />
+            </section>
+            <section>
+                <h3>Le selecteur étoile</h3>
+                <p>
+                    A mettre tout en haut de mon fichier css:
+                    *{
+                    box-sizing:border-box;
+                    }
+                </p>
+                <p>
+                    Cela permet d'ajuster les élèments sans modifier la largeur est la hauteur definit.
+                </p>
+                <h3>Comment faire un commentaire en css </h3>
+                <img src="img/selecteurUniverselle.png" class="moyen" alt="commentaire en CSS3">
+                <p>
+                    Il suffit de mettre le slahs suivi d'une étoile pour ouvrir le commentaire,mettre vos anotations,
+                    puis étoile slash pour le fermer(exemple concret dans votre fichiers css)
+                </p>
+            </section>
+
+            <section class="select">
+                <h3>Maintenant jouons avec les selecteurs CLASS et ID</h3>
+                <p>
+                    Pour selectionner uniquement mon logo je lui ai mis un id qui est toujours un identifiant unique ,il
+                    ne peut donc en avoir qu'un seul.
+                </p>
+                <br>
+                <!--balise qui permet le retour a la ligne-->
+                <p>
+                    Il faudras ajouter l'attribut id="nom choisit" pour html est en css il faut lappeler avec le ashtag
+                    #suivit du nom de l'ID.
+                </p>
+                <p>
+                    Maintenant si on veux selectionner certains elément il suffira d ajouter une class="select" a nos
+                    sections en css on l'appelera a laide d un point devant le nom de la class.
+                </p>
+                <p>
+                    3em p de cette section
+                </p>
+                <p>
+                    4em p de cette section
+
+                </p>
+                <p>
+                    5em paragraphe de cette section a était selectionner grace a la l'élément parent section de class
+                    select qui est appeler en css al'aide d'un point devant le nom de la class.
+                </p>
+
+                <p>
+                    6em p de cette section recuperer garce au selecteur nth-of-type Le sélecteur :nth-of-type (“n-ième
+                    du type”) vous permet de sélectionner un ou plusieurs éléments en fonction de leur ordre dans la
+                    source et selon des critères que vous déterminez.
+                </p>
+                <img src="img/nth-child.png" class="moyen" alt="Selecteur enfant de">
+
+                <div class="zoneA">
+                    Zone A
+                </div>
+                <div class="zoneB">
+                    Zone B
+                    <span class="couleurBleu"> Texte entre balise de couple span </span>
+                    Zone B
+                </div>
+                <div id="zoneC">
+                    Zone C
+                </div>
+                <div id="zoneD">
+                    Zone
+                    <span>D</span>
+                </div>
+            </section>
+            <section class="section">
+                <h2>LES PROPRIETES CSS</h2>
+                <p>
+                    Dans ce cours nous verrons les propieter essentiel qui nous permette de modifier notre site a notre
+                    bon vouloir ou selon la charte etablie avec votre client
+                </p>
+                <p>
+                    Je vous donne également un liens vous permettant de voir toutes les proprietées existante ainsi que
+                    leur valeurs en css.
+                </p>
+                <p>
+                    Voici un lien sûre ou vous trouverez toutes les proprietés CSS ainsi que leur valeurs associes:<a
+                        href="https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Selectors">Selecteur CSS3</a>
+                </p>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <h3>Zone de pied de page.</h3>
+        <img src="img/logo.png" alt="logo html5 et css3" />
+        <p>Possibilite de contact,adresse,maps,mentions légales ect...</p>
+
+    </footer>
+</body>
+
+</html>
